@@ -26,34 +26,6 @@ public class P3 {
 
         int count = 0;
 
-        /*
-        int val[][] = new int[sum/3 + 1][n + 1];
-
-        for (int j = 0; j <= n; j++) {
-            val[0][j] = 0;
-        }
-        for (int i = 0; i <= sum/3; i++) {
-            val[i][0] = 0;
-        }
-
-        int value;
-        for (int i = 1; i <= sum/3; i++) {
-            for (int j = 1; j <= n; j++) {
-                val[i][j] = val[i][j - 1];
-                if (A[j - 1] <= i) {
-                    value = val[i - A[j - 1]][j - 1] + A[j - 1];
-                    if (value > val[i][j]) {
-                        val[i][j] = value;
-                    }
-                }
-                if (val[i][j] == sum / 3) {
-                    count += 1;
-                }
-            }
-        }
-
-        */
-
        //    /*
         int result[][] = new int[sum/3 + 1][n + 1];
          for (int i = 0; i <= n; i++) {
@@ -74,8 +46,6 @@ public class P3 {
                          result[j][i] = weight;
                      }
                  }
-                 //java.lang.ArrayIndexOutOfBoundsException:
-                 // Index 2 out of bounds for length 2
                  if (result[j][i] == sum / 3) {
                      count++;
                  }
